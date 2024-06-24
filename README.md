@@ -9,15 +9,6 @@ I'm a passionate student actively seeking to deepen my understanding of IT secur
 - 🌱 I’m currently learning Pen Testing formats  .
 - 💻 Open to collaborate on projects related to cybersecurity and ethical hacking as well as troubleshooting devices and networking .
 
-## Projects
-
-Here are some projects I'm currently working on or have completed:
-
-- **Project 1:** Brief description or highlight. Include what you learned or accomplished.
-- **Project 2:** Brief description or highlight. Include what you learned or accomplished.
-- **Project 3:** Brief description or highlight. Include what you learned or accomplished.
-
-Feel free to explore these projects and provide any feedback or suggestions!
 
 ## Skills
 
@@ -26,9 +17,9 @@ Feel free to explore these projects and provide any feedback or suggestions!
 - 🛡️ Penetration Testing
 - 🖥️ Linux Systems
 - 📊 Security Analysis
-- Device Configuration 
-- Wiring
-- 
+- 💻 Device Configuration 
+- 🛜 Wiring
+  
 
 ## Get in Touch
 
