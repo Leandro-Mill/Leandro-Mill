@@ -24,7 +24,7 @@ I'm a passionate student actively seeking to deepen my understanding of IT secur
 ## Get in Touch
 
 - LinkedIn: [My Profile](https://www.linkedin.com/in/leandro-millares-a296a5290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
-- Email: [millaresleandro@gmail.com]
+- Email: [Gmail](millaresleandro@gmail.com)
 
 Let's connect and discuss cybersecurity, IT security projects, or opportunities for collaboration!
 
