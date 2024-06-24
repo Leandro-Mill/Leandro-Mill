@@ -1,0 +1,67 @@
+Step 1: Configure Access And VTY(Telnet) Passwords 
+
+Router# Config t
+Router(config)#
+
+Router(config)#  enable secret Cisco123
+
+Router(config)#  line vty 0 4
+Router(config-line)# password Cisco123
+Router(config-line)# login
+
+Step 2: Configure A Router Hostname
+
+Router(config)#  hostname Router1
+Router1(config)#
+
+Step 3: Configure IP Addresses For Router Interfaces 
+
+Router1(config)# interface GigabitEthernet 0/0
+Router1(config-if)# ip address 100.100.100.1 255.255.255.252
+Router1(config-if)# no shutdown
+Router1(config-if)# exit
+
+Router1(config)# interface GigabitEthernet 0/1
+Router1(config-if)# ip address 192.168.10.1 255.255.255.0
+Router1(config-if)# no shutdown
+Router1(config-if)# exit
+
+Step 4: Confiugre Static Or Dynamic Routing 
+
+                           (Destination) (Subnet)      (Gateway)
+Router1(config)#  ip route 200.200.200.0 255.255.255.0 100.100.100.2
+
+Step 5: Save The Config
+
+Router1(config)# exit
+Router1# copy running-config startup-config
+
+Router1# show running-config
+
+*OPTIONAL* 
+
+Configure NAT
+(Only If Your Router Acts As Internet Border Gateway)
+
+Router1# config t
+Router1(config)# interface GigabitEthernet 0/0
+Router1(config-if)# ip nat outside
+Router1(config-if)# exit
+
+Router1(config)# interface GigabitEthernet 0/1
+Router1(config-if)# ip nat inside
+Router1(config-if)# exit
+
+Router1(config)# access-list 1 permit 192.168.10.0 0.0.0.255
+Router1(config)# ip nat inside source list 1 interface GigabitEthernet 0/0 overload
+
+CONFIGURE DHCP
+(A Cisco Router Can Be Configured As A DCHP Server To Dynamically Assign IP Adresses To Internal Hosts)
+
+ip dhcp pool lan-pool
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+dns-server 8.8.8.8
+
+(Use This To Exlude ertain Ip Addresses That You Dont Want The Router To Assign)
+ip dhcp excluded-address 192.168.10.1 192.168.10.50
