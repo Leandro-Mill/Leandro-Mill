@@ -1,3 +1,4 @@
+#Simple AutoClicker that can be improved by most likey adding a hot key that can start and stop it, or a GUI
 import time
 import pyautogui
 delay = 1*60
